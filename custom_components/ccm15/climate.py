@@ -254,7 +254,7 @@ class Thermostat(ClimateEntity):
     def unique_id(self):
         """Return the unique_id of the thermostat."""
         from homeassistant.util import slugify
-        return 'ccm15.' + slugify(self.name)
+        return 'ccm15' + slugify(self.name)
 
     @property
     def name(self):
